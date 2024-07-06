@@ -3,13 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: azure;
     height: 100vh;
 }
 
 #carousel {
-    width: 85vw;
-    height: 40vh;
-    border: 1px solid black;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,9 +24,12 @@
 }
 
 button {
-    height: 30vh;
+    font-size: 4rem;
+    height: 45vh;
+    width: 10vw;
+    border-radius: 8px;
     border: none;
-    /* margin: auto; */
+    margin: auto;
 }
 
 img {
