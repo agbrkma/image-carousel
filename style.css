@@ -1,10 +1,14 @@
+body{
+    background-color: azure;
+    text-align: center;
+    height: 90vh;
+}
 
 #carousel-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: azure;
-    height: 100vh;
+    height: 100%;
 }
 
 #carousel {
@@ -35,4 +39,15 @@ button {
 img {
     width: 280px;
     height: 40vh;
+}
+
+#circleDiv{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+
+}
+
+.selectedCircle {
+    background-color: black;
 }
