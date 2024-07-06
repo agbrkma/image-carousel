@@ -1,0 +1,36 @@
+
+#carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#carousel {
+    width: 85vw;
+    height: 40vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#single-img {
+    width: 40vw;
+    height: 50vh;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 30vh;
+    border: none;
+    /* margin: auto; */
+}
+
+img {
+    width: 280px;
+    height: 40vh;
+}
