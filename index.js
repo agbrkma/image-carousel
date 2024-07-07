@@ -51,11 +51,27 @@ const changeCircle = (passedIndex) => {
         circle.innerHTML = '&#9675'
     })
     circles[currentIndex].innerHTML = '&#9673'
-    console.log(`${circles[passedIndex]} changed`)
 }
 
 function showSlides() {
     setInterval(nextImage, 5000)
+}
+
+function clickCircles() {
+    circles.forEach(circle => {
+        circle.addEventListener('click', () => {
+            const clickedCircleIndex = circles.indexOf(circle)
+            const distance = Math.abs(currentIndex - clickedCircleIndex)
+            for(let i = 0; i < distance; i++){
+                if(clickedCircleIndex > currentIndex){
+                    nextImage()
+                }
+                else if(clickedCircleIndex < currentIndex){
+                    previousImage()
+                }
+            }
+        })
+    })
 }
 
 
@@ -70,4 +86,5 @@ nextBtn.addEventListener('click', () =>{
 window.addEventListener('load', () => {
     showSlides()
     makeCircles()
+    clickCircles()
 })
